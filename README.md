@@ -2,7 +2,21 @@
 
 Exchainge is a prototype for digital academic credential management based on distributed ledger technology to facilitate student exchange between the participating universities by making the process of sending and verifying of transcripts more secure and transparent using Blockchain Technology.
 
-It consist of 4 components 
+# Technologies 
+Ethereum for the Chain and Solidity for Smart Contracts.
+
+Metamask for Ethereum wallets.
+
+Docker for Containerized artifacts.
+
+React for Frontend. 
+
+Node js and Express js for Backend.
+
+Mongodb for Database
+
+
+The project consist of 4 components 
 
 # 1) Mobility Blockchain Backend Blockchain
 
