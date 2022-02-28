@@ -1,1 +1,1 @@
-# exChainge-Ethereum-Blockchain-for-Student Exchange
+# ExChainge - Ethereum Blockchain for Student Exchange
