@@ -227,4 +227,94 @@ When building from source, you are responsible for setting up your own productio
 
 For a custom deployment, first make sure you have built the Explorer distributables for production, using `npm run build`. Assuming you already have a web server, such as Nginx, you will need to copy everything from the `dist/` folder to the public folder of the web server (e.g. /usr/share/nginx/html). Then, in the same target folder you need a valid `config.json` file. Note the filename, which is different from the development version. You can use the `config.*.json` from the root of the repo as templates. Make sure to also fill in the `nodeUrl` in the `eth-lite` plugin config section. Lastly, make sure that your web server redirects all routes to the `index.html` to enable HTML5 routing. You can refer to `.docker/nginx.conf` as an example.
 
+# 3)Mobility Blockchain Backend
+
+Backend for the SEBA Lab blockchain project.
+
+# How to start up the REST API
+Fetch the config
+    
+    Copy the config.js from the story: https://gitlab.lrz.de/student-mobility-seba/mobility-blockchain-backend/-/issues/4
+    and add it to the directory ./express/src/
+
+Build
+
+    $ npm install
+
+Run
+
+    $ cd express
+    $ npm start
+
+# API Endpoints Examples
+1. Create new User
+
+
+    POST http://localhost:4003/user/create
+   
+     Payload:
+     {
+     "username": "test-6",
+     "metamask_address": "random"
+     }
+
+     Response: 201 Created
+     {
+     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+     "username": "test-6",
+     "metamask_address": "random",
+     "nonce": "7601"
+     }
+
+
+2. User login
+
+
+    POST http://localhost:4003/user/login
+   
+    Payload:
+    {
+    "username": "test-6",
+    "metamask_address": "random"
+    "sign": "random_sign"
+    }
+   
+    Response: 200 OK
+    {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9",
+    "username": "test-6",
+    "metamask_address": "random",
+    "nonce": "7601"
+    }
+   
+
+3. Read Nonce
+
+    
+    GET http://localhost:4003/user/nonce/metamask_address
+   
+    Response: 200 OK
+    3532
+   
+
+4. Create Transcript 
+
+
+    POST http://localhost:4003/transcript/create
+    
+    Payload:
+    {
+       "sending_university_username": "test-3",
+       "receiving_university_username": "test-user",
+       "semester": "WIN2021_22",
+       "university": "TUM",
+       "student_id": "ge45mnd",
+       "subject_grades": [{
+            "subject_name": "SEBA Lab",
+            "subject_code": "IN2031",
+            "grade": "4,3",
+            "passing_status": "FAILED"
+       }]
+    }
+   
 
