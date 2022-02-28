@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@600&display=swap');
+#icon {
+    font-size: 5em;
+}
+
+#checkboxPosition {
+    position: absolute;
+    left: 1em;
+}
+#iconText{
+    position: absolute;
+    top:8em;
+    left:2em;
+    font-size: 1px;
+}
+
+#title2 {
+    position: absolute;
+    top: 8vh;
+    left: 35vw;
+    width: 20vw;
+    font-size:5em;
+    font-family: 'Raleway', sans-serif;
+    color:rgb(53, 110, 255);
+    ;
+}
+
+#subTitle2{
+    position: absolute;
+    top: 34vh;
+    left: 25vw;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    color: #677689 ;
+}
+#UploadButton {
+    position: absolute;
+    top: 45em;
+    left: 33em;
+}
+#SendToUniversity {
+    position: absolute;
+    top: 74vh;
+    left: 25vw;
+    width:53vw !important;
+}
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.popup_inner {
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    top: 70%;
+    bottom: 2%;
+    margin: auto;
+    background: white;
+}
+#close {
+    position: absolute;
+    right: 0px;
+    top:0px;
+    border:transparent;
+    background-color: transparent;
+}
+#close:hover {
+   cursor: pointer;
+   color: red;
+}
+#universities {
+    padding-top: 20px;
+    padding-left: 10px;
+    font-family: 'Lato', sans-serif;
+    padding-left: 2em;
+    color: #3f50b5 ;
+
+}
+#Avater{
+    font-family: 'Lato', sans-serif;
+    color: #3f50b5 ;
+    font-size: 10em !important;
+}
+#Avater:hover {
+    color:blue;
+    cursor: pointer;
+ } 
+
+#universities:hover {
+   color:blue;
+   cursor: pointer;
+}
+#confirmation {
+    position: absolute;
+    left: 5em;
+    top: 5em;
+    font-family: 'Lato', sans-serif;
+    color: #3f50b5 ;
+}
+
+.navbar {
+    background-color: #222;
+}
+a,
+.navbar-nav,
+.navbar-light .nav-link {
+    color: #9fffcb;
+}
+.navbar-brand {
+    font-size: 1.4em;
+    color: #9fffcb;
+}
+.form-center {
+    position: absolute !important;
+    left: 25%;
+    right: 25%;
+}
+#home:hover {
+    cursor: pointer;
+}
+#LandingTitle {
+    padding-bottom: 15px;
+}
+
+#foldericonPosition{
+    padding-bottom: 100px;
+    margin: 100px;
+}
+#fileName{
+    font-size: larger;
+    padding-left: 12em;
+}
+
+
+#folder1Text{
+    padding-left: 1em;
+}
+#backgroud {
+    min-height: calc(100vh - 80px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://easyupload.io/img/background3.jpg);
+    background-size: cover;
+    padding: 40px 0;
+    color: #fff;
+   }
+
+   
+   #dropDown2{
+    color:#677689 ;
+    position: absolute;
+    top:42vh;   
+    left:25vw;          
+}
+  
+   .drop-zone-area {
+    min-height: 0 !important;
+}
+.MuiDropzoneArea-root {
+ display: table-cell;
+ background: transparent !important;
+ border-color: rgb(53, 110, 255)!important; 
+}
+.MuiDropzoneArea-textContainer{
+    height: 7em;
+    width :46em;
+}
+.MuiDropzonePreviewList-image{
+    max-height:20px;
+}
+.MuiDropzoneArea-icon{
+color:#677689  !important;
+}
+.css-10hburv-MuiTypography-root{
+    font-size: 1.2rem !important;
+}
+#uploadFileName{
+    position: absolute;
+    top:65vh;
+    left:48vw;
+    color:#677689 
+}

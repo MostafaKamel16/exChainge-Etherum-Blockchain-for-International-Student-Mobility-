@@ -1,0 +1,76 @@
+{
+  "name": "student-mobility",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/material": "^5.1.0",
+    "@progress/kendo-theme-material": "^5.1.1",
+    "@rpldy/upload-button": "^0.14.2",
+    "@rpldy/uploady": "^0.14.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "axios": "^0.24.0",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-tx": "^2.1.2",
+    "ethereumjs-util": "^7.1.3",
+    "ethers": "^5.5.2",
+    "fs-extra": "^8.1.0",
+    "hammerjs": "^2.0.8",
+    "material-ui-dropzone": "^3.5.0",
+    "md5-file": "^5.0.0",
+    "object-hash": "^2.2.0",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dropzone": "^11.5.1",
+    "react-file-icon": "^1.1.0",
+    "react-minimal-pie-chart": "^8.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "reactjs-popup": "^2.0.5",
+    "solc": "^0.5.11",
+    "validator": "^13.7.0",
+    "web-vitals": "^1.0.1",
+    "web3": "^1.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "pretty": "prettier --write \"src/**/*.{js,jsx,json,css}\" --tab-width 4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@material-ui/styles": "^4.11.4",
+    "react-bootstrap": "^2.0.2",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.0"
+  },
+  "proxy": "http://localhost:4003"
+}

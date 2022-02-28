@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="30px" viewBox="0 0 137 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.548944%" y1="49.2448965%" x2="84.8775373%" y2="50.879139%" id="linearGradient-1">
+            <stop stop-color="#1A0297" offset="0%"></stop>
+            <stop stop-color="#33ABF2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="68.0303887%" y1="24.1416725%" x2="30.3979752%" y2="75.1836817%" id="linearGradient-2">
+            <stop stop-color="#174BFF" offset="0%"></stop>
+            <stop stop-color="#33ABF2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="32.7270932%" x2="50%" y2="80.952805%" id="linearGradient-3">
+            <stop stop-color="#33C1FF" offset="0%"></stop>
+            <stop stop-color="#174BFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="82.8880486%" y1="48.7360347%" x2="18.0697155%" y2="51.0091842%" id="linearGradient-4">
+            <stop stop-color="#1A0297" offset="0%"></stop>
+            <stop stop-color="#33C1FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.3978659%" y1="17.3165627%" x2="54.740192%" y2="70.9351472%" id="linearGradient-5">
+            <stop stop-color="#174BFF" offset="0%"></stop>
+            <stop stop-color="#1A0297" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="20.8005563%" y1="40.9772646%" x2="76.8317095%" y2="58.5589732%" id="linearGradient-6">
+            <stop stop-color="#1A0297" offset="0%"></stop>
+            <stop stop-color="#174BFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="10.8942614%" y1="49.5640147%" x2="89.3671538%" y2="50.4099353%" id="linearGradient-7">
+            <stop stop-color="#33C1FF" offset="0%"></stop>
+            <stop stop-color="#174BFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="91.5586798%" y1="19.771614%" x2="10.2946962%" y2="78.9140111%" id="linearGradient-8">
+            <stop stop-color="#1A0196" offset="0%"></stop>
+            <stop stop-color="#174BFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.8614958%" y1="7.57224853%" x2="50.1385042%" y2="89.4372853%" id="linearGradient-9">
+            <stop stop-color="#33C1FF" offset="0%"></stop>
+            <stop stop-color="#1A0297" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="7.11679822%" y1="31.9582518%" x2="92.9537396%" y2="74.3966671%" id="linearGradient-10">
+            <stop stop-color="#174BFF" offset="0%"></stop>
+            <stop stop-color="#33ABF2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="89.5037272%" y1="47.1990641%" x2="15.208886%" y2="52.8045176%" id="linearGradient-11">
+            <stop stop-color="#174BFF" offset="0%"></stop>
+            <stop stop-color="#1A0297" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(-2.000000, -1.000000)">
+            <g id="Group-2" font-family="ArialMT, Arial" font-size="28" font-weight="normal">
+                <text id="Ex-hainge">
+                    <tspan x="0.452148438" y="25" fill="#0B2691">Ex</tspan>
+                    <tspan x="33.1279297" y="25" fill="#FF0000">   </tspan>
+                    <tspan x="56.4658203" y="25" fill="#0462F6">hain</tspan>
+                    <tspan x="109.40332" y="25" fill="#0B2691">ge</tspan>
+                </text>
+            </g>
+            <g id="Group" transform="translate(33.000000, 1.000000)">
+                <circle id="Oval" fill="#1A0196" cx="16" cy="2" r="2"></circle>
+                <circle id="Oval" fill="#174BFF" cx="2" cy="14" r="2"></circle>
+                <circle id="Oval" fill="#174BFF" cx="23" cy="6" r="2"></circle>
+                <circle id="Oval" fill="#174BFF" cx="23" cy="19" r="2"></circle>
+                <circle id="Oval" fill="#33ABF2" cx="18" cy="25" r="2"></circle>
+                <circle id="Oval" fill="#33C1FF" cx="5" cy="4" r="2"></circle>
+                <circle id="Oval" fill="#1A0297" cx="6" cy="23" r="2"></circle>
+                <path d="M18,25 L6,23" id="Line" stroke="url(#linearGradient-1)" stroke-width="1.2" stroke-linecap="square"></path>
+                <polyline id="Line" stroke="url(#linearGradient-2)" stroke-width="1.2" stroke-linecap="square" points="23 19 20.4679498 22.0384602 18 25"></polyline>
+                <path d="M5,4 L2,14" id="Line" stroke="url(#linearGradient-3)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M15.5,2 L5,4" id="Line" stroke="url(#linearGradient-4)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M2,14 L6,23" id="Line" stroke="url(#linearGradient-5)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M16,2 L23,6" id="Line" stroke="url(#linearGradient-6)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M23,6 L5,4" id="Line" stroke="url(#linearGradient-7)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M16,2 L2,14" id="Line" stroke="url(#linearGradient-8)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M5,4 L6,23" id="Line" stroke="url(#linearGradient-9)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M18,25 L2,14" id="Line" stroke="url(#linearGradient-10)" stroke-width="1.2" stroke-linecap="square"></path>
+                <path d="M23,19 L6,23" id="Line" stroke="url(#linearGradient-11)" stroke-width="1.2" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>

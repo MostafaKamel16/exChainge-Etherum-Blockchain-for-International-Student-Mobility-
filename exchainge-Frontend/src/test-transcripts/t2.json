@@ -1,0 +1,15 @@
+{
+    "status_processing": "NOT VALADATING",
+    "sending_university_username": "TUM",
+    "receiving_university_username": "LMU",
+    "semester": "WIN2021_22",
+    "student_id": "gr98had",
+    "subject_grades": [
+        {
+            "subject_name": "SEBA Lab",
+            "subject_code": "IN2031",
+            "grade": "2,3",
+            "passing_status": "PASSED"
+        }
+    ]
+}
