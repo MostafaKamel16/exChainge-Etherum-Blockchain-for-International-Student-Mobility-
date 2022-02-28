@@ -1,1 +1,1 @@
-# exChainge-Etherum-Blockchain-for-International-Student-Mobility-
+# exChainge-Ethereum-Blockchain-for-International-Student-Mobility
