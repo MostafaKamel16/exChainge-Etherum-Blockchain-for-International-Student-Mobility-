@@ -1,0 +1,1 @@
+{"version":3,"file":"StackBarTooltipText.d.ts","sourceRoot":"","sources":["../../../../src/data/vis/stackBar/StackBarTooltipText.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAI/B,MAAM,WAAW,yBAAyB;IACtC,WAAW,EAAE,MAAM,CAAC;CACvB;AAYD,qBAAa,mBAAoB,SAAQ,KAAK,CAAC,SAAS,CAAC,yBAAyB,CAAC;IAC/E,MAAM;CAUT"}

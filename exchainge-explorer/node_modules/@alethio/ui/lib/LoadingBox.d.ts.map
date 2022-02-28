@@ -1,0 +1,1 @@
+{"version":3,"file":"LoadingBox.d.ts","sourceRoot":"","sources":["../src/LoadingBox.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAC/B,OAAO,EAAc,iBAAiB,EAAE,MAAM,cAAc,CAAC;AAI7D,MAAM,WAAW,gBAAgB;IAC7B,MAAM,CAAC,EAAE,iBAAiB,CAAC;CAC9B;AAMD,qBAAa,UAAW,SAAQ,KAAK,CAAC,SAAS,CAAC,gBAAgB,CAAC;IAC7D,MAAM;CAOT"}

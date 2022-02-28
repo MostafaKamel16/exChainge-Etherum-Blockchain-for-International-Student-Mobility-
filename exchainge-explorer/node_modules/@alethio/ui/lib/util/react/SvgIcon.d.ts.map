@@ -1,0 +1,1 @@
+{"version":3,"file":"SvgIcon.d.ts","sourceRoot":"","sources":["../../../src/util/react/SvgIcon.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAE/B,MAAM,WAAW,aAAa;IAC1B,IAAI,CAAC,EAAE,MAAM,CAAC;IACd,WAAW,CAAC,EAAE,MAAM,CAAC;CACxB;AAED,qBAAa,OAAQ,SAAQ,KAAK,CAAC,SAAS,CAAC,aAAa,CAAC;IACvD,MAAM,CAAC,YAAY;;;MAGjB;IAEF,MAAM;CAWT"}

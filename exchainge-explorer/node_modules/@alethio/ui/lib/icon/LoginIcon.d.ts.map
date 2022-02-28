@@ -1,0 +1,1 @@
+{"version":3,"file":"LoginIcon.d.ts","sourceRoot":"","sources":["../../src/icon/LoginIcon.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAC/B,OAAO,EAAW,aAAa,EAAE,MAAM,uBAAuB,CAAC;AAE/D,MAAM,WAAW,eAAgB,SAAQ,aAAa;CACrD;AAED,qBAAa,SAAU,SAAQ,KAAK,CAAC,SAAS,CAAC,eAAe,CAAC;IAC3D,MAAM;CAYT"}

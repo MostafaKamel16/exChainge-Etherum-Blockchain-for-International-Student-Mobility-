@@ -1,0 +1,1 @@
+{"version":3,"file":"FloatingActionBar.d.ts","sourceRoot":"","sources":["../../src/overlay/FloatingActionBar.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AA0B/B,MAAM,WAAW,uBAAuB;IAIpC,QAAQ,CAAC,EAAE,UAAU,GAAG,WAAW,GAAG,aAAa,GAAG,cAAc,CAAC;CACxE;AAMD,qBAAa,iBAAkB,SAAQ,KAAK,CAAC,SAAS,CAAC,uBAAuB,CAAC;IAC3E,MAAM;CAKT"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"ByteSize.d.ts","sourceRoot":"","sources":["../../src/data/ByteSize.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAG/B,MAAM,WAAW,cAAc;IAC3B,QAAQ,EAAE,MAAM,CAAC;IACjB,MAAM,EAAE,MAAM,CAAC;IAEf,MAAM,EAAE,MAAM,CAAC;CAClB;AAGD,qBAAa,QAAS,SAAQ,KAAK,CAAC,SAAS,CAAC,cAAc,CAAC;IACzD,MAAM;CAKT"}

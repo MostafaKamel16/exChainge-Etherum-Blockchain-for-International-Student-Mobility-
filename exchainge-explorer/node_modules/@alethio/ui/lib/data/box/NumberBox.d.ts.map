@@ -1,0 +1,1 @@
+{"version":3,"file":"NumberBox.d.ts","sourceRoot":"","sources":["../../../src/data/box/NumberBox.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAG/B,OAAO,EAAE,SAAS,EAAE,MAAM,sBAAsB,CAAC;AAEjD,MAAM,WAAW,eAAe;IAC5B,KAAK,EAAE,MAAM,GAAG,SAAS,CAAC;IAC1B,MAAM,EAAE,MAAM,CAAC;CAClB;AAED,qBAAa,SAAU,SAAQ,KAAK,CAAC,SAAS,CAAC,eAAe,CAAC;IAC3D,MAAM;CAMT"}

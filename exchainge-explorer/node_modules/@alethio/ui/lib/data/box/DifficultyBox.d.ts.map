@@ -1,0 +1,1 @@
+{"version":3,"file":"DifficultyBox.d.ts","sourceRoot":"","sources":["../../../src/data/box/DifficultyBox.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAG/B,OAAO,EAAE,SAAS,EAAE,MAAM,sBAAsB,CAAC;AAGjD,MAAM,WAAW,mBAAmB;IAChC,KAAK,EAAE,SAAS,CAAC;IACjB,MAAM,EAAE,MAAM,CAAC;CAClB;AAED,qBAAa,aAAc,SAAQ,KAAK,CAAC,SAAS,CAAC,mBAAmB,CAAC;IACnE,MAAM;CAOT"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"OpenInBrowserIcon.d.ts","sourceRoot":"","sources":["../../src/icon/OpenInBrowserIcon.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAC/B,OAAO,EAAW,aAAa,EAAE,MAAM,uBAAuB,CAAC;AAE/D,MAAM,WAAW,uBAAwB,SAAQ,aAAa;CAE7D;AAED,qBAAa,iBAAkB,SAAQ,KAAK,CAAC,SAAS,CAAC,uBAAuB,CAAC;IAC3E,MAAM;CAWT"}

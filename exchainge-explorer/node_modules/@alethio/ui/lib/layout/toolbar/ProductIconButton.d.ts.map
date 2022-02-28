@@ -1,0 +1,1 @@
+{"version":3,"file":"ProductIconButton.d.ts","sourceRoot":"","sources":["../../../src/layout/toolbar/ProductIconButton.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAE/B,OAAO,EAAc,gBAAgB,EAAE,MAAM,0BAA0B,CAAC;AAExE,MAAM,WAAW,uBAAuB;IACpC,IAAI,EAAE,gBAAgB,CAAC,MAAM,CAAC,CAAC;CAClC;AAMD,qBAAa,iBAAkB,SAAQ,KAAK,CAAC,SAAS,CAAC,uBAAuB,CAAC;IAC3E,MAAM;CAWT"}

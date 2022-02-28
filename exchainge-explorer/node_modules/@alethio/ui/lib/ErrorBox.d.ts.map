@@ -1,0 +1,1 @@
+{"version":3,"file":"ErrorBox.d.ts","sourceRoot":"","sources":["../src/ErrorBox.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,OAAO,CAAC;AAE1B,OAAO,EAAc,iBAAiB,EAAE,MAAM,cAAc,CAAC;AAE7D,MAAM,WAAW,cAAc;IAC3B,MAAM,CAAC,EAAE,iBAAiB,CAAC;CAC9B;AAKD,qBAAa,QAAS,SAAQ,KAAK,CAAC,SAAS,CAAC,cAAc,CAAC;IACzD,MAAM;CAKT"}
