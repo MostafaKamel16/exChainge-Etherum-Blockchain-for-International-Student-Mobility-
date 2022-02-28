@@ -1,0 +1,34 @@
+{
+  "name": "mobility-blockchain-backend",
+  "version": "1.0.0",
+  "description": "Backend server for Seba mobility application",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./index.js",
+    "devstart": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.lrz.de/student-mobility-seba/mobility-blockchain-backend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "eth-sig-util": "^3.0.1",
+    "ethereumjs-util": "^7.1.3",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.14"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
