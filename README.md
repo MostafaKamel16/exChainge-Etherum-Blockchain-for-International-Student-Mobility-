@@ -16,7 +16,7 @@ Node js and Express js for Backend.
 Mongodb for Database
 
 
-The project consist of 4 components 
+#Project components 
 
 # 1) Mobility Blockchain Backend Blockchain
 
