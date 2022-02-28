@@ -1,6 +1,6 @@
 # ExChainge - Ethereum Blockchain for Student Exchange
 
-Exchaunge is a prototype for digital academic credential management based on distributed ledger technology to facilitate student exchange between the participating universities by making the process of sending and verifying of transcripts more secure and transparent using Blockchain Technology.
+Exchainge is a prototype for digital academic credential management based on distributed ledger technology to facilitate student exchange between the participating universities by making the process of sending and verifying of transcripts more secure and transparent using Blockchain Technology.
 
 It consist of 4 components 
 
@@ -68,3 +68,163 @@ Check if blocks are being mined: `eth.mining`
 Stop mining: `miner.stop()`
 
 Start mining: `miner.start()`
+
+# 2)Ethereum Lite Explorer by Alethio
+The **Lite Explorer**  is a client-side only web application that connects directly to a [Ethereum JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC) compatible node.
+
+
+## Technical Details
+
+The project is built on a React/MobX and TypeScript stack, using the [Alethio CMS](https://github.com/Alethio/cms), which allows us to add extensions dynamically through 3rd party plugins.
+The basic functionality of the explorer is implemented via a series of open-source [core plugins](https://github.com/Alethio/explorer-core-plugins), which we also use internally for our [aleth.io](https://aleth.io) platform. Please refer to [Alethio CMS](https://github.com/Alethio/cms) for documentation on the plugin system.
+
+### Project structure
+```
+📁ethereum-lite-explorer
+├─📁dev             - dev server for serving the app
+├─📁dist            - target folder for application that contains deployables
+└─📁src             - source files
+  ├─📁app (*1)      - application source code
+  ├─📁assets        - static assets (e.g. images) that will be bundled together with the application
+  └─📁public        - contains static assets that are copied to the dist folder as they are
+
+(*1)
+📁app
+├─📁components      - React components
+├─📁translation     - localized strings
+├─📁util            - application-agnostic utilities. Ideally these would be in a separate repo/package.
+└─📄index.ts         - entry point
+```
+
+## Getting started
+
+### Prerequisites
+Please make sure you have the following installed and running properly
+- [Node.js](https://nodejs.org/en/download/) >= 8.0 or [Docker](https://www.docker.com/)
+- If building it you will also need NPM >= 6.9 (NPM is distributed with Node.js. For more information see: https://www.npmjs.com/get-npm)
+- A JSON-RPC enabled and accessible Ethereum Client, some examples:
+    * [An Infura Account](#with-infura)
+    * [Parity Light Client](#with-parity-light-client)
+    * [Ganache](#with-ganache)
+    * [Besu Dev Mode](#with-besu) - private chain example
+- If not using the pre-built Docker images, you will need an HTTP server for serving the app and it must be deployed at the root of the domain/subdomain.
+
+### Configuration
+
+The application requires a JSON configuration file which is loaded at runtime but with different approaches for `development` vs `production` environments.
+
+For `development` the config file is called `config.dev.json` located in the root of the repository.
+As for the `production` environment the config file is copied in the `dist` folder and renamed to `config.json`.
+
+The `dist` is the target folder for the built application that needs to be served by an HTTP server.
+
+Here are 3 sample config files as starting point.
+
+| Config name | Description |
+| --- | --- |
+| config.default.json | Default configuration file which contains the core plugins of the app that are enough to run the explorer. |
+| config.ibft2.json | Configuration file that has the default core plugins plus an extra one useful for [IBFT2 based chains](https://pegasys.tech/another-day-another-consensus-algorithm-why-ibft-2-0/) that decodes the extraData field of a block. |
+| config.memento.json | Configuration file that has the default core plugins plus the memento plugins to use the Memento API as a data source |
+
+The possibility to change the URL of the RPC enabled Ethereum node is done through the `eth-lite` core plugin.
+See the [`nodeUrl`](https://github.com/Alethio/ethereum-lite-explorer/blob/master/config.default.json#L16) attribute for the plugin which has the default value set to `https://mainnet.infura.io/`.
+
+For advanced configuration editing, please refer to the [Alethio CMS documentation](https://github.com/Alethio/cms)
+
+### Running in Docker
+You can run the Lite Explorer in Docker by using the already published images on [Docker Hub](https://hub.docker.com/r/alethio/ethereum-lite-explorer).
+The config file in the Docker images have the default values from the `config.default.json` sample file.
+By default it will connect to `https://mainnet.infura.io/`.
+
+The simplest command to run it is
+```sh
+$ docker run -p 80:80 alethio/ethereum-lite-explorer
+```
+which will start a container on port 80 of your computer with a nginx embedded to serve the pre-build explorer. You can now open [localhost](http://localhost) in your browser and use it.
+
+There are 2 env vars that can be passed in at runtime:
+
+| ENV var | Description |
+|---|---|
+| APP_NODE_URL | URL of RPC enabled node. (e.g. `https://host:port`, also supports Basic Auth by prepending `user:pass@` to the `host`). This overrides in the config file the `nodeUrl` attribute of the `eth-lite` core plugin. |
+| APP_BASE_URL | It is used ONLY in `index.html` for `og:tags` (e.g. `https://my.app.tld`). Overrides build time defined value. |
+
+For example if you want to connect to your node on localhost with all default configs run the following command:
+```sh
+$ docker run -p 80:80 -e APP_NODE_URL="http://localhost:8545" alethio/ethereum-lite-explorer
+```
+If more customization is needed, a full configuration file can be mounted in the application root (e.g. in the `/usr/share/nginx/html` folder).
+```sh
+$ docker run -p 80:80 -v /your-config-dir/config.json:/usr/share/nginx/html/config.json alethio/ethereum-lite-explorer
+```
+### Running in Kubernetes
+You can deploy the Lite Explorer in Kubernetes using the following steps:
+- `cd .kubernetes`
+- Run `./deploy.sh` to deploy, uses `config.default.json` as config.
+- Use for example `./deploy.sh ../config.memento.json` to select other config files.
+- Run `./remove.sh` to remove
+
+
+### Building from source
+Clone the explorer in a folder of your choosing
+```sh
+$ git clone https://github.com/Alethio/ethereum-lite-explorer.git
+$ cd ethereum-lite-explorer
+```
+
+**IMPORTANT**: Make sure you are using npm 6.9+ for the next step. Older versions will NOT work due to `alias` feature usages introduced in npm 6.9.
+
+Install npm packages
+```sh
+$ npm install
+```
+
+Copy the sample config file
+```sh
+$ cp config.default.json config.dev.json
+```
+Make necessary modifications into `config.dev.json` if needed. For development, you must also remove the version query strings `?v=#.#.#` from the `"plugins"` URIs. Full list of configuration options available [here](#configuration)
+
+To start the development build run the following command:
+```sh
+$ npm run watch
+```
+
+This terminal will be kept open, as the above command continuously watches the source files for changes and triggers an incremental build on every change.
+
+Alternatively, to build the minified version (used also for `production`) use:
+```sh
+$ npm run build
+```
+
+Since the app is using the Alethio CMS for using the core plugins the next step is to install them:
+```sh
+$ npm i -g @alethio/cms-plugin-tool
+$ acp install --dev \
+    @alethio/explorer-plugin-eth-common \
+    @alethio/explorer-plugin-eth-lite \
+    @alethio/explorer-plugin-eth-memento \
+    @alethio/explorer-plugin-3box
+```
+
+If you need other custom plugins like for example to decode the extraData field of a block for the IBFT2 based networks, you can install them at this step:
+```sh
+$ acp install --dev @alethio/explorer-plugin-eth-ibft2
+```
+
+The above command `acp` installs the plugins in the `dist` folder. Basically they will be copied, together with the base app.
+
+**IMPORTANT**: Whenever you use `npm run build` or `npm run build-dev` the `dist` folder is emptied, thus the plugins are also deleted and they need to be reinstalled.
+
+Finally, you can start the local Explorer development server with
+```sh
+$ npm start
+```
+
+#### Deploying the built assets to production
+
+When building from source, you are responsible for setting up your own production environment. There are two available options: you can either start from our existing Dockerfile found in the root of the repo and customize that, or you can use your own custom solution.
+
+For a custom deployment, first make sure you have built the Explorer distributables for production, using `npm run build`. Assuming you already have a web server, such as Nginx, you will need to copy everything from the `dist/` folder to the public folder of the web server (e.g. /usr/share/nginx/html). Then, in the same target folder you need a valid `config.json` file. Note the filename, which is different from the development version. You can use the `config.*.json` from the root of the repo as templates. Make sure to also fill in the `nodeUrl` in the `eth-lite` plugin config section. Lastly, make sure that your web server redirects all routes to the `index.html` to enable HTML5 routing. You can refer to `.docker/nginx.conf` as an example.
+
+
